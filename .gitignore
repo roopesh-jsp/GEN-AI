@@ -1,0 +1,86 @@
+# ----------------------------------------------------------------
+# --- Environment & Secrets ---
+# ----------------------------------------------------------------
+# Never commit secrets, API keys, or environment-specific configurations.
+# This will find .env files in ANY folder.
+.env
+.env.*
+!.env.example
+
+# ----------------------------------------------------------------
+# --- Virtual Environments ---
+# ----------------------------------------------------------------
+# Never commit virtual environment folders. This will find them in ANY sub-project.
+venv/
+env/
+.venv/
+.env/
+myenv/
+
+# Binaries and scripts from virtual environments
+/activate
+/bin/
+/include/
+/lib/
+/lib64/
+/Scripts/
+pip-selfcheck.json
+
+# ----------------------------------------------------------------
+# --- Python Bytecode & Caches ---
+# ----------------------------------------------------------------
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.python-version
+
+# ----------------------------------------------------------------
+# --- IDE / Editor Configuration ---
+# ----------------------------------------------------------------
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# ----------------------------------------------------------------
+# --- Local Data, Databases & Indexes (Common in GenAI/RAG) ---
+# ----------------------------------------------------------------
+*.sqlite
+*.sqlite3
+*.db
+db.json
+*.faiss
+*.index
+chroma/
+*.csv
+*.jsonl
+*.parquet
+
+# ----------------------------------------------------------------
+# --- Testing Artifacts ---
+# ----------------------------------------------------------------
+.pytest_cache/
+.coverage
+htmlcov/
+nosetests.xml
+coverage.xml
+
+# ----------------------------------------------------------------
+# --- Build & Distribution Artifacts ---
+# ----------------------------------------------------------------
+build/
+dist/
+*.egg-info/
+sdist/
+wheelhouse/
+pip-wheel-metadata/
+*.tar.gz
+*.zip
+
+# ----------------------------------------------------------------
+# --- Logs & Operating System Files ---
+# ----------------------------------------------------------------
+*.log
+.DS_Store
+Thumbs.db
