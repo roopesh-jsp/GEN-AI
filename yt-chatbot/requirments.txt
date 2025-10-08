@@ -1,0 +1,5 @@
+youtube-transcript-api 
+langchain-community
+langchain
+langchain-google-genai
+dotenv
